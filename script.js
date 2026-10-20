@@ -1,7 +1,7 @@
 /* 1. FOTO: Masukkan nama file foto di sini (taruh satu folder dengan file ini) ===== */
 const PHOTOS={
   logo: 'logo-smkm3-transparan.png',  // Logo SMKM 3 Ciputat untuk Cover
-  cover: 'gedung-bmkg.png',       // 'gedung-bmkg.jpg'
+  cover: 'pkl.jpeg',       // 'gedung-bmkg.jpg'
   tempat: 'ruang-kerja.jpeg',      // 'ruang-kerja.jpg'
   p1main: 'main1.png',      //  'buku-tamu.png'
   p1masuk: 'masuk1.png',     //  'form-masuk.png'
@@ -14,12 +14,12 @@ const PHOTOS={
 
 /* 2. ISI SLIDE: teks dalam [ ... ] otomatis jadi sorotan kuning */
 const S=[
-{t:'cover',title:'Perancangan UI/UX Sistem Buku Tamu dan Logbook PKL',sub:'Balai Besar Meteorologi Klimatologi dan Geofisika Wilayah II',who:'Muhamad Rizky Apriadi · Rekayasa Perangkat Lunak\nSMK Muhammadiyah 3 Ciputat Tangerang Selatan · 2026',photo:['cover','gedung-bmkg.png'],logo:'logo-smkm3-transparan.png'},
+{t:'cover',title:'Perancangan UI/UX Sistem Buku Tamu dan Logbook PKL',sub:'Balai Besar Meteorologi Klimatologi dan Geofisika Wilayah II',who:'Muhamad Rizky Apriadi · Rekayasa Perangkat Lunak\nSMK Muhammadiyah 3 Ciputat Tangerang Selatan · 2026',photo:['cover','pkl.jpeg'],logo:'logo-smkm3-transparan.png'},
 {t:'split',title:'Tempat dan Waktu PKL',cards:[
  {h:'Instansi',b:'Unit pelaksana teknis BMKG untuk pelayanan data cuaca, iklim, kualitas udara, gempa bumi, dan tsunami di wilayah kerja II.'},
  {h:'Waktu',b:'3 Agustus – 30 Oktober 2026, Hari Senin s.d. Kamis, Pukul 09.00 – 15.00 WIB',a:1},
  {h:'Lokasi',b:'Jl. H. Abdul Gani No. 05, Pesanggrahan, Ciputat Timur, Kota Tangerang Selatan'}],photo:['tempat','ruang-kerja.jpeg']},
-{t:'struktur',title:'Struktur Balai Besar MKG Wilayah II',
+{t:'struktur',title:'Struktur BBMKG Wilayah II',
  kepala:{title:'Kepala Balai',name:'Dr. Hartanto, S.T., M.T.'},
  leftCol:{
    title:'Kepala Bagian Tata Usaha',
@@ -261,7 +261,7 @@ go(start-1);
 
 /* SLIDE TERAKHIR: klik di mana saja = cap stempel baru */
 (function(){
- const WORDS=['ASIKK','SELESAI GAIS','FINALLY','PKL 2026','RATE DONG?','#BMKG'],COL=['#E4572E','#1E88E5','#0B2A4A','#FF4FA3'];let n=0;
+ const WORDS=['WELL WELL WELL','SELESAI GAIS','FINALLY','KELAZ GAK?','RATE DONG?','KETIK 1 KLO KEREN'],COL=['#E4572E','#1E88E5','#0B2A4A','#FF4FA3'];let n=0;
  document.addEventListener('click',e=>{
   const sl=els[els.length-1];if(cur!==els.length-1||!sl.classList.contains('active'))return;
   if(document.getElementById('lb').classList.contains('on')||e.target.closest('#nav'))return;
